@@ -1,22 +1,87 @@
+<<<<<<< HEAD
 /* Nav */
+=======
+/* ----------------------------------
+   GLOBAL STYLES
+---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Container width */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ----------------------------------
+   NAVBAR
+---------------------------------- */
+.site-header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+>>>>>>> b0384c10d4c9e0e9dc4a5f090160d8a2addf5fb6
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
+=======
+  padding: 1.2rem 0;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+>>>>>>> b0384c10d4c9e0e9dc4a5f090160d8a2addf5fb6
 }
 
 nav a {
   margin-left: 1.5rem;
+<<<<<<< HEAD
   font-weight: 600;
   text-decoration: none;
   color: #000;
+=======
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  transition: 0.2s;
+>>>>>>> b0384c10d4c9e0e9dc4a5f090160d8a2addf5fb6
 }
 
 nav a:hover {
   color: #6a4efc;
 }
 
+<<<<<<< HEAD
 /* Hero layout */
+=======
+/* ----------------------------------
+   HERO SECTION
+---------------------------------- */
+>>>>>>> b0384c10d4c9e0e9dc4a5f090160d8a2addf5fb6
 .hero {
   display: flex;
   justify-content: space-between;
@@ -24,17 +89,29 @@ nav a:hover {
   padding: 6rem 0;
 }
 
+<<<<<<< HEAD
 .hero-text h1,
 .hero-text h2 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
+=======
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+>>>>>>> b0384c10d4c9e0e9dc4a5f090160d8a2addf5fb6
 }
 
 .highlight {
   color: #6a4efc;
 }
 
+<<<<<<< HEAD
 /* Hero image */
 .hero-image img {
   width: 500px;
@@ -51,4 +128,150 @@ nav a:hover {
     width: 300px;
     margin-top: 2rem;
   }
+=======
+#typewriter {
+  color: #6a4efc;
+  border-right: 3px solid #6a4efc;
+  padding-right: 4px;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 450px;
+}
+
+/* CTA button */
+.cta {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #6a4efc;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  opacity: 0.8;
+}
+
+.hero-image img {
+  width: 470px;
+  max-width: 100%;
+}
+
+/* ----------------------------------
+   SECTION TITLES
+---------------------------------- */
+.section-small-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* ----------------------------------
+   GRID LAYOUT
+---------------------------------- */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.experience-grid,
+.services-grid,
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ----------------------------------
+   CARD STYLE
+---------------------------------- */
+.card {
+  background: #fff;
+  padding: 1.7rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  border: 1px solid #f2f2f2;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+
+/* ----------------------------------
+   SECTION SPACING
+---------------------------------- */
+section {
+  margin-top: 5rem;
+}
+
+/* ----------------------------------
+   SCROLL REVEAL ANIMATION
+---------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+footer {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ----------------------------------
+   RESPONSIVE
+---------------------------------- */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .hero-image img {
+    width: 320px;
+    margin-top: 2rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+>>>>>>> b0384c10d4c9e0e9dc4a5f090160d8a2addf5fb6
 }
