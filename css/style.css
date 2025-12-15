@@ -137,3 +137,22 @@ nav a:hover { color: #6a4efc; }
   opacity: 1;
   margin-top: 0.8rem;
 }
+
+/* EXPERIENCE CARD TOGGLE */
+.experience-card {
+  cursor: pointer;
+}
+
+.experience-card p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition: all 0.4s ease;
+}
+
+.experience-card.active p {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.8rem;
+}
