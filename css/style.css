@@ -218,3 +218,19 @@ footer {
     font-size: 2.4rem;
   }
 }
+
+
+#typewriter {
+  color: #000;
+  font-weight: 700;
+  border-right: 3px solid #000;
+  padding-right: 6px;
+  animation: blink 1s step-end infinite;
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
